@@ -10,7 +10,7 @@
 ======================================== */
 
 .card {
-  padding: var(--space-m-l);
+  padding: var(--space-l-xl);
   margin: 1rem;
   max-width: 500px;
   background-color: var(--card);
@@ -26,6 +26,11 @@
 /* ========================================
    FORM
 ======================================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l-xl);
+}
 
 .input-field {
   display: flex;

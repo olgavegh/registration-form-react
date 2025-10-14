@@ -148,8 +148,7 @@ h3,
 h4,
 p,
 input,
-label,
-hr {
+label {
   margin-top: var(--space-xs-s);
   margin-bottom: var(--space-xs-s);
 }
@@ -164,7 +163,7 @@ strong {
 .btn {
   font-weight: 600;
   border-radius: var(--radius);
-  padding: var(--space-xs);
+  padding: 0.7rem 1.4rem;
   cursor: pointer;
   transition: all 0.2s ease;
 

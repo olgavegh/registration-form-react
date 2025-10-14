@@ -10,6 +10,7 @@ function InputField(props) {
         type={props.type}
         className=""
         required={props.required}
+        value={props.default}
       />
     </div>
   );
