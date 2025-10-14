@@ -1,16 +1,17 @@
-function InputField(props) {
+function InputField({ id, label, type = "text", required, value, onChange }) {
   return (
     <div className="input-field">
-      <label htmlFor={props.id} className="">
-        <strong>{props.label}</strong>{" "}
-        {props.required ? <span>(required)</span> : ""}
+      <label htmlFor={id} className="">
+        <strong>{label}</strong> {required ? <span>(required)</span> : ""}
       </label>
       <input
-        id={props.id}
-        type={props.type}
+        id={id}
+        type={type}
         className=""
-        required={props.required}
-        value={props.default}
+        required={required}
+        value={value}
+        onChange={onChange}
+        autoComplete={type === "password" ? "current-password" : ""} // add autocomplete
       />
     </div>
   );
