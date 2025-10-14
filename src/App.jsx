@@ -1,5 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import Header from "./components/Header";
 import "./App.css";
 
 function App() {
@@ -7,12 +8,16 @@ function App() {
 
   return (
     <>
-      <div>
+      <header>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
-      </div>
-      <h1>Vite + React</h1>
+      </header>
+      <main>
+        <div className="card">
+          <Header />
+        </div>
+      </main>
     </>
   );
 }
