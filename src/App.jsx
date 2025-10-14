@@ -14,13 +14,24 @@ function App() {
     phoneNumber: "7771233444",
     password: "7771233444",
   });
+  const [labelButton, setlabelButton] = useState("Submit");
 
   function handleChange(e) {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
   }
   function handleSubmit(e) {
+    e.preventDefault();
     console.log(formData);
+    setlabelButton("Thank you for submitting !");
+    setFormData({
+      firstName: "",
+      lastName: "",
+      userName: "",
+      email: "",
+      phoneNumber: "",
+      password: "",
+    });
   }
 
   const inputs = [
@@ -82,7 +93,7 @@ function App() {
               );
             })}
           </div>
-          <SubmitButton onClick={handleSubmit} />
+          <SubmitButton label={labelButton} onClick={handleSubmit} />
         </form>
       </div>
     </main>
