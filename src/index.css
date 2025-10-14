@@ -128,7 +128,8 @@ p {
 p.small,
 #userTable,
 input,
-label {
+label,
+button {
   font-size: var(--step--1);
   font-weight: 300;
   letter-spacing: 0;
@@ -162,9 +163,8 @@ strong {
 
 .btn {
   font-weight: 600;
-  font-size: 0.95rem;
   border-radius: var(--radius);
-  padding: 0.6rem 1.4rem;
+  padding: var(--space-xs);
   cursor: pointer;
   transition: all 0.2s ease;
 
@@ -175,7 +175,7 @@ strong {
 
   &.primary {
     background: var(--color-primary);
-    color: var(--text-strong);
+    color: white;
     border: none;
 
     &:hover {

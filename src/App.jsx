@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import Header from "./components/Header";
 import InputField from "./components/InputField";
+import SubmitButton from "./components/SubmitButton";
 import "./App.css";
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
                 />
               );
             })}
+            <SubmitButton />
           </form>
         </div>
       </main>
