@@ -93,7 +93,7 @@ function App() {
               );
             })}
           </div>
-          <SubmitButton label={labelButton} onClick={handleSubmit} />
+          <SubmitButton label={labelButton} />
         </form>
       </div>
     </main>
